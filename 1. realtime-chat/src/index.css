@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+  @apply bg-gray-700 text-gray-50;
+}
+
+.message {
+  @apply mb-4;
+}
+
+.message > .sender {
+  @apply text-gray-300 text-xs mx-2 mb-1;
+}
+
+.message.sent {
+  @apply text-right;
+}
+
+.message > .text {
+  @apply p-2 rounded inline-block;
+}
+
+.message.received > .text {
+  @apply bg-gray-100 text-gray-800;
+}
+
+.message.sent > .text {
+  @apply bg-blue-400 text-white;
+}

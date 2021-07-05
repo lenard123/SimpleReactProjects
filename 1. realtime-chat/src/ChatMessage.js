@@ -1,9 +1,10 @@
-function ChatMessage({message, id}) {
-    const {text, sender} = message
+function ChatMessage({message, id, user, formRef}) {
+    const {text, sender, uid} = message
+
     return (
-        <div>
-            <span>{sender}: </span>
-            <span>{text}</span>
+        <div ref={formRef} className={`message ${uid === user.uid ? 'sent' : 'received'}`}>
+            <div className="sender">{sender}</div>
+            <div className="text">{text}</div>
         </div>
     )
 }
