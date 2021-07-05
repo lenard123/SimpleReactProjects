@@ -1,5 +1,5 @@
 # SimpleReactProjects
-
+- My Compilation of Projects using ReactJS
 
 ## 1. Realtime Chat Application
 - Chat with everyone in realtime
