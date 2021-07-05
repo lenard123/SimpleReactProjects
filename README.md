@@ -5,4 +5,4 @@
 - Chat with everyone in realtime
 - Created using ReactJS and Firebase
 - [Live Demo](https://lenard123.github.io/SimpleReactProjects/realtime-chat-app/)
-- [Docs](1.%20realtime-chat/Readme.md)
+- [Docs](1.%20realtime-chat/README.md)
