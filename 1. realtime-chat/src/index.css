@@ -7,6 +7,37 @@ body {
   @apply bg-gray-700 text-gray-50;
 }
 
+.App {
+  @apply bg-gray-600 mx-auto;
+  max-width: 728px;
+}
+
+.ChatRoom {
+  @apply h-screen;
+}
+
+.ChatRoom > .header {
+  @apply bg-gray-800 flex justify-between p-2 fixed top-0 right-0 left-0 mx-auto;
+  height: 10vh;
+  min-height: 60px;
+  max-width: 728px;
+  z-index: 100;
+}
+
+.ChatRoom > .main {
+  @apply overflow-y-auto flex-grow px-5 py-2 fixed;
+  top:  10vh;
+  bottom: 10vh;
+  max-width: 728px;
+}
+
+.ChatRoom > .footer {
+  @apply flex fixed bottom-0 right-0 left-0 mx-auto;
+  height: 10vh;
+  min-height: 50px;
+  max-width: 728px;
+}
+
 .message {
   @apply mb-4;
 }
@@ -29,4 +60,19 @@ body {
 
 .message.sent > .text {
   @apply bg-blue-400 text-white;
+}
+
+.App-logo {
+  @apply mx-auto;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

@@ -15,9 +15,9 @@ function SignIn(props) {
  }
 
  return (
-    <div className="pt-8 px-16">
-
-        <img src={logo} alt="Application logo" className="h-32 mx-auto"/>
+    <div className="px-8 md:px-16 min-h-screen">
+        <div className="h-16"></div>
+        <img src={logo} alt="Application logo" className="App-Logo h-64 mx-auto"/>
 
         <h1 className="text-2xl font-bold text-center mb-16">Realtime Chat Application</h1>
 

@@ -24,7 +24,7 @@ function SendMessage({messagesRef, user})
     }
 
     return (
-        <form onSubmit={send} className="flex">
+        <form onSubmit={send} className="footer">
             <input 
                 type="text" 
                 value={message} 

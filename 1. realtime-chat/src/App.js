@@ -22,7 +22,7 @@ function App() {
     }
 
     return (
-        <div className="bg-gray-600 w-full md:w-2/3 lg:w-1/2 mx-auto h-screen">
+        <div className="App">
             { user ? 
                 <ChatRoom user={user} onSignOut={resetUser}/> : 
                 <SignIn onSubmit={submit}/> 
