@@ -13,11 +13,9 @@ function ChatRoom({user, onSignOut}) {
   const [messages] = useCollectionData(query, {idField: 'id'})
 
   const dummy = useRef()
-  const formRef = useRef()
 
   useEffect(() => {
     dummy.current.scrollIntoView({ behavior: 'smooth' })
-    formRef.current && formRef.current.scrollIntoView({ behavior: 'smooth' })
   }, [messages])
 
   return (
@@ -38,7 +36,7 @@ function ChatRoom({user, onSignOut}) {
 
       </div>
 
-      <SendMessage formRef={formRef} messagesRef={messagesRef} user={user}/>
+      <SendMessage messagesRef={messagesRef} user={user}/>
     </div>
   )
 }

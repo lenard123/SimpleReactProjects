@@ -1,31 +1,62 @@
 .App {
-  text-align: center;
+  @apply bg-gray-600 mx-auto;
+  max-width: 728px;
+}
+
+.ChatRoom {
+  @apply h-screen;
+}
+
+.ChatRoom > .header {
+  @apply bg-gray-800 flex justify-between p-2 fixed top-0 right-0 left-0 mx-auto;
+  height: 10vh;
+  min-height: 60px;
+  max-width: 728px;
+  z-index: 100;
+}
+
+.ChatRoom > .main {
+  @apply overflow-y-auto flex-grow px-5 py-2 fixed mx-auto left-0 right-0;
+  top:  10vh;
+  bottom: 10vh;
+  max-width: 728px;
+}
+
+.ChatRoom > .footer {
+  @apply flex fixed bottom-0 right-0 left-0 mx-auto;
+  height: 10vh;
+  min-height: 50px;
+  max-width: 728px;
+}
+
+.message {
+  @apply mb-4;
+}
+
+.message > .sender {
+  @apply text-gray-300 text-xs mx-2 mb-1;
+}
+
+.message.sent {
+  @apply text-right;
+}
+
+.message > .text {
+  @apply p-2 rounded inline-block;
+}
+
+.message.received > .text {
+  @apply bg-gray-100 text-gray-800;
+}
+
+.message.sent > .text {
+  @apply bg-blue-400 text-white;
 }
 
 .App-logo {
-  height: 40vmin;
+  @apply mx-auto h-64;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  animation: App-logo-spin infinite 20s linear;
 }
 
 @keyframes App-logo-spin {
